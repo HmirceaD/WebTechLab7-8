@@ -4,9 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-
         <servlet>
-
             <servlet-name>Serv</servlet-name>
             <servlet-class>com.mirceadan.serv.Serv</servlet-class>
         </servlet>
@@ -16,5 +14,24 @@
             <url-pattern>/Serv</url-pattern>
         </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ex1</servlet-name>
+        <jsp-file>/ex1.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ex1</servlet-name>
+        <url-pattern>/ex1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ex2</servlet-name>
+        <jsp-file>/ex2.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ex2</servlet-name>
+        <url-pattern>/ex2</url-pattern>
+    </servlet-mapping>
 
 </web-app>

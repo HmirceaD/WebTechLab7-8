@@ -110,7 +110,7 @@ public class Serv  extends HttpServlet {
         Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
 
         String sql = String.format("INSERT INTO " +
-                "warehouses(firstname,lastname,username,pass,addr,eml,alea) " +
+                "people(firstname,lastname,username,pass,addr,eml,alea) " +
                 "VALUES(%s,%s,%s,%s,%s,%s,%s)",
                 firstName, lastname, username,
                 pass, addr, eml, alea);
