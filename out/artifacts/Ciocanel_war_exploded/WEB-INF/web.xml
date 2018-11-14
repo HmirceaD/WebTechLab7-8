@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+
+        <servlet>
+            <!-- Asociates to the servlet class, a servlet name used when calling it in a browser -->
+            <servlet-name>Serv</servlet-name>
+            <servlet-class>com.mirceadan.serv.Serv</servlet-class>
+        </servlet>
+        <!-- Each servlet in the web application gets a servlet mapping The url pattern is used to map URI to servlets. The context path starts always
+        with a slash ("/") and never ends in a slash. The servlet path immediately follows the context path -->
+        <servlet-mapping>
+            <servlet-name>Serv</servlet-name>
+            <url-pattern>/Serv</url-pattern>
+        </servlet-mapping>
+
+
+</web-app>
